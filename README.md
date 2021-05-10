@@ -5,9 +5,9 @@ Pytorch implementation of [**Class-Agnostic Object Viewpoint Estimation in the W
 Check out our [**Paper**](arxiv) and [**Webpage**](webpage) for more details.
 
 <p align="center">
-  <img src="./asset/TeaserIdea.png" width="400" />
-  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
-  <img src="./asset/PoseContrast.png" width="400" /> 
+  <img src="./asset/TeaserIdea.png" width="45%" />
+  &emsp; &emsp; &emsp;
+  <img src="./asset/PoseContrast.png" width="45%" /> 
 </p>
 
 
