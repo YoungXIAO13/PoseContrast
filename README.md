@@ -1,8 +1,8 @@
 # PoseContrast
 
-Pytorch implementation of [**Class-Agnostic Object Viewpoint Estimation in the Wild with Pose-Aware Contrastive Learning**](arxiv) paper.
+Pytorch implementation of [**Class-Agnostic Object Viewpoint Estimation in the Wild with Pose-Aware Contrastive Learning**](https://arxiv.org/abs/2105.05643) paper.
 
-Check out our [**Paper**](arxiv) and [**Webpage**](webpage) for more details.
+Check out our [**Paper**](https://arxiv.org/abs/2105.05643) and [**Webpage**](http://imagine.enpc.fr/~xiaoy/PoseContrast/) for more details.
 
 <p align="center">
   <img src="./asset/TeaserIdea.png" width="45%" />
