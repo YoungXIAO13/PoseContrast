@@ -33,7 +33,8 @@ conda activate PoseContrast
 
 ### 2. Download datasets
 ```
-./data/download_data.sh
+cd ./data
+bash download_data.sh
 ```
 
 This command will download following datasets:
@@ -51,9 +52,16 @@ This command will download following datasets:
 
 ### 3. Download pretrained models
 ```
-./pretrain_models/download_moco.sh
+cd ./pretrain_models
+bash download_moco.sh
 ```
 This command will download the [**MOCOv2**](https://github.com/facebookresearch/moco) model released by FAIR and correct the module names.
+
+```
+mkdir exps/PoseContrast_Pascal3D_MOCOv2 && cd exps/PoseContrast_Pascal3D_MOCOv2
+wget https://www.dropbox.com/s/mlmubnz9xgbflm4/ckpt.pth?dl=0
+```
+This command will download our class-agnostic object viewpoint estimation network trained on Pascal3D+ dataset.
 
 
 ## How to use
