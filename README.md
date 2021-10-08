@@ -1,6 +1,6 @@
 # PoseContrast
 
-Pytorch implementation of [**Class-Agnostic Object Viewpoint Estimation in the Wild with Pose-Aware Contrastive Learning**](https://arxiv.org/abs/2105.05643) paper.
+[3DV 2021 Oral] Pytorch implementation of [**Class-Agnostic Object Viewpoint Estimation in the Wild with Pose-Aware Contrastive Learning**](https://arxiv.org/abs/2105.05643) paper.
 
 Check out our [**Paper**](https://arxiv.org/abs/2105.05643) and [**Webpage**](http://imagine.enpc.fr/~xiaoy/PoseContrast/) for more details.
 
@@ -15,7 +15,7 @@ Check out our [**Paper**](https://arxiv.org/abs/2105.05643) and [**Webpage**](ht
 @INPROCEEDINGS{Xiao2020PoseContrast,
     author    = {Yang Xiao and Yuming Du and Renaud Marlet},
     title     = {PoseContrast: Class-Agnostic Object Viewpoint Estimation in the Wild with Pose-Aware Contrastive Learning},
-    booktitle = {ArXiv},
+    booktitle = {International Conference on 3D Vision (3DV)},
     year      = {2021}
 }
 ```
