@@ -63,6 +63,10 @@ wget https://www.dropbox.com/s/mlmubnz9xgbflm4/ckpt.pth?dl=0
 ```
 This command will download our class-agnostic object viewpoint estimation network trained on Pascal3D+ dataset.
 
+The model trained on ObjectNet3D dataset can be downloaded from [GoogleDrive](https://drive.google.com/drive/folders/13pCF8-HOhnNPbKpaINfMqRgQ-GhNlWk8?usp=sharing).
+- ``PoseContrast_ObjectNet3D_ZeroShot`` contains the trained model for the first base-training stage, where the model is trained only on the 80 base classes.
+- ``PoseContrast_ObjectNet3D_FewShot`` contains the trained model for the second fine-tuning stage, where the previous model is fine-tuned on both the 80 base classes and the 20 novel classes.
+
 
 ## How to use
 
@@ -70,7 +74,15 @@ This command will download our class-agnostic object viewpoint estimation networ
 ```
 ./scripts/train.sh 
 ```
+Training on the Pascal3D+ dataset.
 Models are saved at `exps/PoseContrast_Pascal3D_MOCOv2`, a training log file `trainer.log` will also be generated.
+
+---
+
+```
+./scripts/train_object3d.sh
+```
+Training on the ObjectNet3D dataset. Models are saved at `exps/PoseContrast_ObjectNet3D_ZeroShot` and `PoseContrast_ObjectNet3D_FewShot`, respectively.
 
 ### 2. Evaluate on different datasets
 ```
@@ -80,6 +92,14 @@ Evaluate the model on Pascal3D+ and Pix3D:
 - `prediction` folder would be created to save the predicted viewpoints,
 - `correlation` folder would be created to save the angle classification scores and viewpoint estimation errors,
 - testing log file `tester.log` would be generated saving the quantitative evaluation results.
+
+---
+
+
+```
+./scripts/test_object3d.sh 
+```
+Evaluate the model on the ObjectNet3D dataset and report the results for **base** and **novel** classes.
 
 
 ## Visual Results
